@@ -1,0 +1,429 @@
+2024-12-30T21:00:20.907Z info: Folder created successfully - IP: ::1
+2024-12-30T21:04:10.579Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:04:10.767Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:04:11.230Z info: User fetched successfully - IP: ::1
+2024-12-30T21:04:16.050Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:04:16.240Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:12:45.936Z info: File created successfully - IP: ::1
+2024-12-30T21:12:50.820Z info: User fetched successfully - IP: ::1
+2024-12-30T21:12:55.311Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:12:55.501Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:14:09.503Z info: User fetched successfully - IP: ::1
+2024-12-30T21:15:06.812Z info: User fetched successfully - IP: ::1
+2024-12-30T21:15:09.096Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:15:09.283Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:15:56.196Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:15:56.385Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:16:08.755Z info: File updated successfully - IP: ::1
+2024-12-30T21:16:10.585Z info: User fetched successfully - IP: ::1
+2024-12-30T21:16:11.563Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:16:11.752Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:16:26.337Z info: User fetched successfully - IP: ::1
+2024-12-30T21:16:27.198Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:16:27.388Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:28.850Z info: User fetched successfully - IP: ::1
+2024-12-30T21:17:29.590Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:29.780Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:34.676Z info: User fetched successfully - IP: ::1
+2024-12-30T21:17:35.563Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:36.044Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:43.150Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:17:43.347Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:00.705Z info: User fetched successfully - IP: ::1
+2024-12-30T21:19:01.353Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:01.542Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:05.735Z info: User fetched successfully - IP: ::1
+2024-12-30T21:19:16.556Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:16.742Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:55.612Z info: User fetched successfully - IP: ::1
+2024-12-30T21:19:56.447Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:19:56.927Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:02.409Z info: Folder deleted successfully - IP: ::1
+2024-12-30T21:20:03.747Z info: User fetched successfully - IP: ::1
+2024-12-30T21:20:04.415Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:04.547Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:06.683Z info: Folder created successfully - IP: ::1
+2024-12-30T21:20:09.476Z info: User fetched successfully - IP: ::1
+2024-12-30T21:20:09.955Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:10.242Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:15.342Z info: File created successfully - IP: ::1
+2024-12-30T21:20:16.693Z info: User fetched successfully - IP: ::1
+2024-12-30T21:20:17.195Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:20:17.384Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:25:58.033Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:25:58.222Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:13.489Z info: User fetched successfully - IP: ::1
+2024-12-30T21:26:14.054Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:14.241Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:16.587Z info: File deleted successfully - IP: ::1
+2024-12-30T21:26:19.167Z info: User fetched successfully - IP: ::1
+2024-12-30T21:26:19.814Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:20.004Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:33.962Z info: File created successfully - IP: ::1
+2024-12-30T21:26:34.153Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:36.354Z info: File deleted successfully - IP: ::1
+2024-12-30T21:26:41.744Z info: User fetched successfully - IP: ::1
+2024-12-30T21:26:42.298Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:26:42.488Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:27:06.728Z info: File created successfully - IP: ::1
+2024-12-30T21:27:06.921Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:27:08.502Z info: File deleted successfully - IP: ::1
+2024-12-30T21:27:15.608Z error: Error deleting file: 
+Invalid `prisma.file.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-30T21:27:18.239Z info: User fetched successfully - IP: ::1
+2024-12-30T21:27:18.833Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:27:19.022Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:27:21.248Z info: File created successfully - IP: ::1
+2024-12-30T21:27:21.438Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:27:23.249Z info: File deleted successfully - IP: ::1
+2024-12-30T21:28:15.313Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:28:20.900Z error: Error deleting file: 
+Invalid `prisma.file.delete()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\fileController.ts:126:44
+
+  123   return;
+  124 }
+  125 
+→ 126 const result = await prisma.file.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-30T21:28:24.393Z info: User fetched successfully - IP: ::1
+2024-12-30T21:28:30.600Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:28:30.791Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:28:32.648Z info: File created successfully - IP: ::1
+2024-12-30T21:28:32.842Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:28:34.986Z info: File deleted successfully - IP: ::1
+2024-12-30T21:28:43.737Z info: User fetched successfully - IP: ::1
+2024-12-30T21:28:44.535Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:28:44.726Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:29:26.615Z info: File created successfully - IP: ::1
+2024-12-30T21:29:27.102Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:29:29.302Z info: File deleted successfully - IP: ::1
+2024-12-30T21:30:06.897Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:30:07.087Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:30:12.335Z info: File created successfully - IP: ::1
+2024-12-30T21:30:12.528Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:30:14.252Z info: File deleted successfully - IP: ::1
+2024-12-30T21:30:14.444Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:30:17.029Z info: File created successfully - IP: ::1
+2024-12-30T21:30:17.220Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:31:27.951Z info: User fetched successfully - IP: ::1
+2024-12-30T21:33:22.939Z info: User fetched successfully - IP: ::1
+2024-12-30T21:34:19.477Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:19.666Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:39.992Z info: User fetched successfully - IP: ::1
+2024-12-30T21:34:40.553Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:40.742Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:43.830Z info: File deleted successfully - IP: ::1
+2024-12-30T21:34:56.932Z info: User fetched successfully - IP: ::1
+2024-12-30T21:34:57.692Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:57.885Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:34:59.937Z info: File created successfully - IP: ::1
+2024-12-30T21:35:00.127Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:35:02.219Z info: File deleted successfully - IP: ::1
+2024-12-30T21:35:02.411Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:35:08.333Z info: File created successfully - IP: ::1
+2024-12-30T21:35:08.525Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:36:46.323Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:36:46.510Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:36:48.201Z info: User fetched successfully - IP: ::1
+2024-12-30T21:36:48.857Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:36:49.046Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:37:24.724Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:37:24.913Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:38:19.935Z info: Folder created successfully - IP: ::1
+2024-12-30T21:38:20.125Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:38:24.101Z info: File created successfully - IP: ::1
+2024-12-30T21:38:24.595Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:38:31.091Z info: Folder created successfully - IP: ::1
+2024-12-30T21:38:31.281Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:38:33.338Z info: File created successfully - IP: ::1
+2024-12-30T21:38:33.530Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:38:46.394Z info: Folder created successfully - IP: ::1
+2024-12-30T21:38:46.585Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:44:05.280Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:44:10.526Z warn: User not found with provided token - IP: ::1
+2024-12-30T21:45:14.772Z error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2024-12-30T21:45:14.773Z error: Error registering user: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587 - IP: ::1
+2024-12-30T21:46:18.915Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:46:20.519Z warn: Email or username already exists - IP: ::1
+2024-12-30T21:46:23.625Z info: User logged in successfully - IP: ::1
+2024-12-30T21:46:24.467Z info: User fetched successfully - IP: ::1
+2024-12-30T21:46:26.146Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:46:26.270Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:46:29.543Z info: Folder created successfully - IP: ::1
+2024-12-30T21:46:37.378Z info: File created successfully - IP: ::1
+2024-12-30T21:46:37.566Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:46:42.710Z info: Folder created successfully - IP: ::1
+2024-12-30T21:46:42.909Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:03.760Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:48:05.473Z info: User fetched successfully - IP: ::1
+2024-12-30T21:48:07.016Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:07.204Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:09.902Z info: Folder deleted successfully - IP: ::1
+2024-12-30T21:48:10.388Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:14.304Z info: Folder created successfully - IP: ::1
+2024-12-30T21:48:14.501Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:17.037Z info: User fetched successfully - IP: ::1
+2024-12-30T21:48:18.246Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:48:18.433Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:49:29.133Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:49:30.691Z info: User fetched successfully - IP: ::1
+2024-12-30T21:49:32.454Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:49:32.580Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T21:49:36.241Z warn: Folder already exists - IP: ::ffff:127.0.0.1
+2024-12-30T21:49:41.802Z info: User fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T21:49:42.295Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T21:49:42.423Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T21:50:22.533Z info: Folder created successfully - IP: ::1
+2024-12-30T21:50:24.369Z info: User fetched successfully - IP: ::1
+2024-12-30T21:50:24.906Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:50:25.033Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:50:35.669Z info: User fetched successfully - IP: ::1
+2024-12-30T21:50:38.545Z info: User fetched successfully - IP: ::1
+2024-12-30T21:50:40.090Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:50:40.217Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:51:46.586Z info: HTTP Server running on http://localhost:3000
+2024-12-30T21:51:48.050Z info: User fetched successfully - IP: ::1
+2024-12-30T21:51:51.418Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:51:51.671Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:51:55.575Z info: Folder created successfully - IP: ::1
+2024-12-30T21:51:55.900Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:53:55.407Z info: User fetched successfully - IP: ::1
+2024-12-30T21:53:56.232Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:53:56.543Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:54:51.611Z info: User fetched successfully - IP: ::1
+2024-12-30T21:54:52.641Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:54:52.946Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:55:23.531Z error: Error deleting file: 
+Invalid `prisma.file.delete()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\fileController.ts:126:44
+
+  123   return;
+  124 }
+  125 
+→ 126 const result = await prisma.file.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-30T21:55:28.765Z info: User fetched successfully - IP: ::1
+2024-12-30T21:55:29.577Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:55:29.889Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:55:32.412Z error: Error deleting file: 
+Invalid `prisma.file.delete()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\fileController.ts:126:44
+
+  123   return;
+  124 }
+  125 
+→ 126 const result = await prisma.file.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-30T21:56:09.008Z error: Error deleting file: 
+Invalid `prisma.file.delete()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\fileController.ts:126:44
+
+  123   return;
+  124 }
+  125 
+→ 126 const result = await prisma.file.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-30T21:56:10.544Z info: User fetched successfully - IP: ::1
+2024-12-30T21:56:11.550Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:56:11.916Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:56:15.291Z info: Folder deleted successfully - IP: ::1
+2024-12-30T21:56:15.836Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:56:19.852Z info: Folder created successfully - IP: ::1
+2024-12-30T21:56:20.174Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:57:32.265Z info: User fetched successfully - IP: ::1
+2024-12-30T21:57:35.566Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:57:35.877Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:57:47.325Z info: User fetched successfully - IP: ::1
+2024-12-30T21:57:49.253Z info: Folders fetched successfully - IP: ::1
+2024-12-30T21:57:49.561Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:00:06.050Z info: User fetched successfully - IP: ::1
+2024-12-30T22:00:06.882Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:00:07.193Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:02:18.839Z info: User fetched successfully - IP: ::1
+2024-12-30T22:02:21.429Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:02:21.734Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:03:56.513Z info: User fetched successfully - IP: ::1
+2024-12-30T22:03:57.568Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:03:57.870Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:04:06.238Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:04:07.824Z info: User fetched successfully - IP: ::1
+2024-12-30T22:04:09.537Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:04:09.666Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:04:47.094Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:04:48.735Z info: User fetched successfully - IP: ::1
+2024-12-30T22:04:50.662Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:04:50.786Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:04:53.961Z info: Folder created successfully - IP: ::1
+2024-12-30T22:04:59.317Z info: User fetched successfully - IP: ::1
+2024-12-30T22:04:59.993Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:05:00.120Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:05:04.571Z info: User fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:05:06.930Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:05:07.054Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:05:20.536Z info: User fetched successfully - IP: ::1
+2024-12-30T22:05:22.531Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:05:22.658Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:06:10.841Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:06:12.300Z info: User fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:06:13.793Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:06:14.046Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:06:21.583Z info: Folder created successfully - IP: ::1
+2024-12-30T22:06:21.972Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:07:42.510Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:07:44.955Z info: User fetched successfully - IP: ::1
+2024-12-30T22:07:46.716Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:07:46.846Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:07:50.403Z info: User fetched successfully - IP: ::1
+2024-12-30T22:07:52.238Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:07:52.366Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:08:50.187Z info: User fetched successfully - IP: ::1
+2024-12-30T22:08:50.830Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:08:50.962Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:09:49.679Z info: User fetched successfully - IP: ::1
+2024-12-30T22:09:50.392Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:09:50.513Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:10:02.058Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:10:11.042Z info: User fetched successfully - IP: ::1
+2024-12-30T22:10:12.596Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:10:12.972Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:10:19.963Z info: Folder created successfully - IP: ::1
+2024-12-30T22:10:20.355Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:14:11.712Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:14:13.745Z info: User logged in successfully - IP: ::1
+2024-12-30T22:14:14.528Z info: User fetched successfully - IP: ::1
+2024-12-30T22:14:16.649Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:14:17.006Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:14:24.706Z info: File created successfully - IP: ::1
+2024-12-30T22:14:25.069Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:12.857Z info: User fetched successfully - IP: ::1
+2024-12-30T22:18:14.158Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:14.519Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:17.211Z info: File deleted successfully - IP: ::1
+2024-12-30T22:18:17.584Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:26.418Z info: File created successfully - IP: ::1
+2024-12-30T22:18:26.779Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:53.953Z info: User fetched successfully - IP: ::1
+2024-12-30T22:18:56.568Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:18:56.928Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:20:40.372Z info: User fetched successfully - IP: ::1
+2024-12-30T22:20:41.733Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:20:42.091Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:20:51.054Z info: File updated successfully - IP: ::1
+2024-12-30T22:20:51.422Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:21:55.141Z info: User fetched successfully - IP: ::1
+2024-12-30T22:22:03.870Z info: User fetched successfully - IP: ::1
+2024-12-30T22:22:05.705Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:22:06.070Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:24:10.752Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:24:14.608Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:24:18.352Z info: User fetched successfully - IP: ::1
+2024-12-30T22:24:20.998Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:24:21.371Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:24:23.014Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:24:33.512Z info: User fetched successfully - IP: ::1
+2024-12-30T22:24:35.757Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:24:36.114Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:24:37.812Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:25:22.328Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:25:26.122Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:25:30.246Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:25:34.093Z info: User fetched successfully - IP: ::1
+2024-12-30T22:25:37.193Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:25:37.551Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:25:39.284Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:25:46.627Z warn: New file name or content missing - IP: ::1
+2024-12-30T22:28:00.311Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:28:03.870Z info: User fetched successfully - IP: ::1
+2024-12-30T22:28:07.333Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:28:07.690Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:28:08.905Z warn: File content missing - IP: ::1
+2024-12-30T22:28:25.175Z info: User fetched successfully - IP: ::1
+2024-12-30T22:28:27.037Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:28:27.406Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:28:29.127Z warn: File content missing - IP: ::1
+2024-12-30T22:29:35.105Z info: User fetched successfully - IP: ::1
+2024-12-30T22:29:36.432Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:29:36.803Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:29:38.129Z warn: File content missing - IP: ::1
+2024-12-30T22:29:42.904Z info: User fetched successfully - IP: ::1
+2024-12-30T22:30:03.035Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:30:03.407Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:30:04.983Z warn: File content missing - IP: ::1
+2024-12-30T22:30:09.775Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:30:11.224Z info: User fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:12.822Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:13.199Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:15.322Z warn: File content is the same - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:17.011Z info: File content updated successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:17.325Z info: File content updated successfully - IP: ::1
+2024-12-30T22:30:17.554Z info: File content updated successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:17.896Z info: File content updated successfully - IP: ::1
+2024-12-30T22:30:20.294Z info: User fetched successfully - IP: ::1
+2024-12-30T22:30:21.147Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:30:21.520Z info: Folders fetched successfully - IP: ::ffff:127.0.0.1
+2024-12-30T22:30:23.080Z warn: File content is the same - IP: ::ffff:127.0.0.1
+2024-12-30T22:32:25.838Z warn: File content is the same - IP: ::1
+2024-12-30T22:32:29.673Z info: File created successfully - IP: ::1
+2024-12-30T22:32:30.058Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:36.631Z info: File content updated successfully - IP: ::1
+2024-12-30T22:32:41.541Z info: File content updated successfully - IP: ::1
+2024-12-30T22:32:45.957Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:46.333Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:51.329Z warn: File content is the same - IP: ::1
+2024-12-30T22:32:52.189Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:52.561Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:56.956Z info: User fetched successfully - IP: ::1
+2024-12-30T22:32:59.349Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:32:59.722Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:03.619Z warn: File content is the same - IP: ::1
+2024-12-30T22:33:05.911Z warn: File content is the same - IP: ::1
+2024-12-30T22:33:07.221Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:07.593Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:11.735Z info: Folder deleted successfully - IP: ::1
+2024-12-30T22:33:12.111Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:14.387Z info: Folder deleted successfully - IP: ::1
+2024-12-30T22:33:14.636Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:16.598Z info: User fetched successfully - IP: ::1
+2024-12-30T22:33:18.135Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:18.383Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:22.035Z info: Folder created successfully - IP: ::1
+2024-12-30T22:33:22.411Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:24.585Z info: Folder created successfully - IP: ::1
+2024-12-30T22:33:24.963Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:47.713Z info: User fetched successfully - IP: ::1
+2024-12-30T22:33:50.235Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:33:50.611Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:34:53.332Z info: User fetched successfully - IP: ::1
+2024-12-30T22:34:54.452Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:34:54.824Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:36:33.718Z info: User fetched successfully - IP: ::1
+2024-12-30T22:36:35.002Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:36:35.374Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:36:48.988Z info: User fetched successfully - IP: ::1
+2024-12-30T22:36:49.931Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:36:50.304Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:37:40.065Z info: User fetched successfully - IP: ::1
+2024-12-30T22:37:42.319Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:37:42.691Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:38:50.934Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:38:52.354Z info: User fetched successfully - IP: ::1
+2024-12-30T22:38:53.971Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:38:54.340Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:11.939Z info: User fetched successfully - IP: ::1
+2024-12-30T22:40:14.689Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:15.062Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:28.317Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:40:31.499Z info: User fetched successfully - IP: ::1
+2024-12-30T22:40:33.794Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:34.294Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:38.778Z info: File created successfully - IP: ::1
+2024-12-30T22:40:39.281Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:42.344Z warn: File content is the same - IP: ::1
+2024-12-30T22:40:43.611Z info: File updated successfully - IP: ::1
+2024-12-30T22:40:44.111Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:40:46.102Z info: File updated successfully - IP: ::1
+2024-12-30T22:40:46.604Z info: Folders fetched successfully - IP: ::1

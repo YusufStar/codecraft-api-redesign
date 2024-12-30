@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String    @id @default(uuid()) @map("_id")
+  email            String    @unique
+  username         String    @unique
+  avatar           String?
+  password         String
+  city             String?
+  isAdmin          Boolean
+  isVerified       Boolean
+  verifyToken      String?
+  resetToken       String?
+  resetTokenExpiry DateTime?
+  updatedAt        DateTime  @updatedAt
+  createdAt        DateTime  @default(now())
+  folders          Folder[]
+}
+
+model Folder {
+  id        String   @id @default(cuid()) @map("_id")
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  files     File[]
+  parentId  String?
+  parent    Folder?  @relation("SubFolders", fields: [parentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  children  Folder[] @relation("SubFolders")
+  type      Type     @default(folder)
+
+  @@unique([userId, name])
+}
+
+model File {
+  id        String   @id @default(uuid()) @map("_id")
+  name      String
+  content   String   @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  folderId  String
+  folder    Folder   @relation(fields: [folderId], references: [id], onDelete: Cascade)
+  type      Type     @default(file)
+}
+
+enum Type {
+  file
+  folder
+}
