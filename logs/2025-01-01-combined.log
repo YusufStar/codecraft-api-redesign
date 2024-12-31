@@ -1,0 +1,14 @@
+2024-12-31T23:35:31.588Z info: HTTP Server running on http://localhost:3000
+2024-12-31T23:53:48.011Z info: HTTP Server running on http://localhost:3000
+2024-12-31T23:53:51.651Z info: Received request at / - IP: ::1
+2024-12-31T23:54:02.179Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T23:54:20.348Z warn: No token provided - IP: ::1
+2024-12-31T23:54:20.351Z warn: No token provided - IP: ::1
+2024-12-31T23:54:28.642Z info: User logged in successfully - IP: ::1
+2024-12-31T23:54:29.407Z info: User fetched successfully - IP: ::1
+2024-12-31T23:54:31.001Z info: Folders fetched successfully - IP: ::1
+2024-12-31T23:54:31.489Z info: Folders fetched successfully - IP: ::1
+2024-12-31T23:54:33.531Z info: Folders fetched successfully - IP: ::1
+2024-12-31T23:54:34.005Z info: Folders fetched successfully - IP: ::1
+2024-12-31T23:54:37.644Z warn: File content is the same - IP: ::1
+2024-12-31T23:54:45.631Z info: Snippet created successfully - IP: ::1

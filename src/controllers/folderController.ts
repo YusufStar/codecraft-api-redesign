@@ -38,12 +38,14 @@ export const createFolder = async (
       }
     }
 
-    const existingFolder = await prisma.folder.findUnique({
+    const existingFolder = await prisma.folder.findFirst({
       where: {
-        userId_name: {
-          userId: userId,
-          name: name,
-        },
+        AND: [
+          { userId: userId },
+          {
+            OR: [{ name: name }, { parentId: parentId }],
+          },
+        ],
       },
     });
 

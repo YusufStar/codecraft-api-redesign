@@ -14,20 +14,21 @@ datasource db {
 }
 
 model User {
-  id               String    @id @default(uuid()) @map("_id")
-  email            String    @unique
-  username         String    @unique
+  id               String     @id @default(uuid()) @map("_id")
+  email            String     @unique
+  username         String     @unique
   avatar           String?
   password         String
   city             String?
-  isAdmin          Boolean
-  isVerified       Boolean
+  isAdmin          Boolean    @default(false)
+  isVerified       Boolean    @default(false)
   verifyToken      String?
   resetToken       String?
   resetTokenExpiry DateTime?
-  updatedAt        DateTime  @updatedAt
-  createdAt        DateTime  @default(now())
+  updatedAt        DateTime   @updatedAt
+  createdAt        DateTime   @default(now())
   folders          Folder[]
+  snippets         Snippets[]
 }
 
 model Folder {
@@ -42,8 +43,6 @@ model Folder {
   parent    Folder?  @relation("SubFolders", fields: [parentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
   children  Folder[] @relation("SubFolders")
   type      Type     @default(folder)
-
-  @@unique([userId, name])
 }
 
 model File {
@@ -57,7 +56,52 @@ model File {
   type      Type     @default(file)
 }
 
+model Snippets {
+  id      String @id @default(uuid()) @map("_id")
+  name    String
+  content String
+  userId  String
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([name])
+}
+
 enum Type {
   file
   folder
+}
+
+enum SystemLanguages {
+  turkish
+  english
+}
+
+enum EditorLanguages {
+  javascript
+  typescript
+  python
+  html
+  css
+  markdown
+  json
+  yaml
+  xml
+  plaintext
+  c
+  cpp
+  java
+  php
+  ruby
+  go
+  swift
+  kotlin
+  rust
+  r
+  dart
+  lua
+  perl
+  scala
 }

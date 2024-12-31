@@ -13,6 +13,7 @@ import { S3 } from "@aws-sdk/client-s3";
 import folderRoutes from "./routes/folderRoutes";
 import fileRoutes from "./routes/fileRoutes";
 import buildRoutes from "./routes/buildRoutes";
+import snippetRoutes from "./routes/snippetRoutes";
 
 config();
 const app = express();
@@ -100,6 +101,7 @@ app.use("/users", userRoutes);
 app.use("/folders", folderRoutes);
 app.use("/files", fileRoutes);
 app.use("/build", buildRoutes);
+app.use("/snippets", snippetRoutes);
 
 
 app.listen(3000, () => {
