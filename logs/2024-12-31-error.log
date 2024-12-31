@@ -41,3 +41,7 @@ C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\fileController.ts:126
   125 
 → 126 const result = await prisma.file.delete(
 An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - IP: ::1
+2024-12-31T07:42:33.207Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T19:41:24.721Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T20:43:36.792Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T20:50:45.532Z error: Error calling API Gateway: Error executing code - IP: ::1

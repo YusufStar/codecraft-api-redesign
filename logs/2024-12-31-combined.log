@@ -427,3 +427,202 @@ An operation failed because it depends on one or more records that were required
 2024-12-30T22:40:44.111Z info: Folders fetched successfully - IP: ::1
 2024-12-30T22:40:46.102Z info: File updated successfully - IP: ::1
 2024-12-30T22:40:46.604Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:47:36.746Z info: HTTP Server running on http://localhost:3000
+2024-12-30T22:47:54.214Z info: User fetched successfully - IP: ::1
+2024-12-30T22:52:58.276Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:52:58.776Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:53:02.725Z warn: File content is the same - IP: ::1
+2024-12-30T22:55:45.537Z info: Received request at / - IP: ::1
+2024-12-30T22:55:47.123Z info: User fetched successfully - IP: ::1
+2024-12-30T22:55:50.003Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:55:50.503Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:55:54.280Z warn: File content is the same - IP: ::1
+2024-12-30T22:57:28.298Z info: File content updated successfully - IP: ::1
+2024-12-30T22:57:31.207Z info: Folders fetched successfully - IP: ::1
+2024-12-30T22:57:31.708Z info: Folders fetched successfully - IP: ::1
+2024-12-30T23:01:03.682Z warn: File content is the same - IP: ::1
+2024-12-31T07:38:34.559Z info: HTTP Server running on http://localhost:3000
+2024-12-31T07:41:20.324Z info: HTTP Server running on http://localhost:3000
+2024-12-31T07:42:21.220Z info: HTTP Server running on http://localhost:3000
+2024-12-31T07:42:25.328Z info: Received request at / - IP: ::1
+2024-12-31T07:42:33.207Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T07:42:36.272Z info: User logged in successfully - IP: ::1
+2024-12-31T07:42:37.048Z info: User fetched successfully - IP: ::1
+2024-12-31T07:42:39.791Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:42:40.291Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:45:04.412Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:45:04.886Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:45:10.358Z warn: File content is the same - IP: ::1
+2024-12-31T07:45:12.864Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:45:13.333Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:45:17.017Z warn: File content is the same - IP: ::1
+2024-12-31T07:46:33.018Z warn: File content is the same - IP: ::1
+2024-12-31T07:46:39.647Z info: User fetched successfully - IP: ::1
+2024-12-31T07:47:02.784Z info: User fetched successfully - IP: ::1
+2024-12-31T07:49:09.523Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:49:10.000Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:49:13.781Z warn: File content is the same - IP: ::1
+2024-12-31T07:49:14.592Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:49:15.061Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:49:53.210Z info: User fetched successfully - IP: ::1
+2024-12-31T07:50:30.267Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:30.744Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:44.970Z info: User fetched successfully - IP: ::1
+2024-12-31T07:50:45.959Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:46.428Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:52.289Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:52.762Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:55.221Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:55.696Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:57.614Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:50:58.083Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:02.020Z warn: File content is the same - IP: ::1
+2024-12-31T07:51:08.028Z warn: File content is the same - IP: ::1
+2024-12-31T07:51:32.975Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:33.445Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:39.654Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:40.127Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:44.344Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:44.813Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:47.547Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:48.021Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:51.876Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:52.345Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:58.555Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:51:59.025Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:02.542Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:03.012Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:14.620Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:14.972Z warn: File content is the same - IP: ::1
+2024-12-31T07:52:15.093Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:19.640Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:20.118Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:23.018Z warn: File content is the same - IP: ::1
+2024-12-31T07:52:31.036Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:31.509Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:34.271Z info: User fetched successfully - IP: ::1
+2024-12-31T07:52:35.132Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:35.605Z info: Folders fetched successfully - IP: ::1
+2024-12-31T07:52:41.018Z warn: File content is the same - IP: ::1
+2024-12-31T07:54:43.786Z info: User fetched successfully - IP: ::1
+2024-12-31T07:55:15.350Z info: User fetched successfully - IP: ::1
+2024-12-31T07:59:59.776Z info: User fetched successfully - IP: ::1
+2024-12-31T08:00:39.521Z info: User fetched successfully - IP: ::1
+2024-12-31T08:12:50.335Z info: HTTP Server running on http://localhost:3000
+2024-12-31T19:40:57.538Z info: Received request at / - IP: ::1
+2024-12-31T19:41:24.721Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T19:42:08.464Z info: User logged in successfully - IP: ::1
+2024-12-31T19:42:09.274Z info: User fetched successfully - IP: ::1
+2024-12-31T19:42:32.619Z info: Folders fetched successfully - IP: ::1
+2024-12-31T19:42:33.123Z info: Folders fetched successfully - IP: ::1
+2024-12-31T19:46:54.759Z info: HTTP Server running on http://localhost:3000
+2024-12-31T19:47:19.290Z info: User fetched successfully - IP: ::1
+2024-12-31T19:48:42.710Z info: HTTP Server running on http://localhost:3000
+2024-12-31T19:48:45.090Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:04:08.694Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:05:13.905Z info: User fetched successfully - IP: ::1
+2024-12-31T20:05:22.816Z info: User fetched successfully - IP: ::1
+2024-12-31T20:05:40.101Z info: User fetched successfully - IP: ::1
+2024-12-31T20:06:03.206Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:08:31.343Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:08:45.462Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:08:50.052Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:09:18.219Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:10:47.058Z info: User fetched successfully - IP: ::1
+2024-12-31T20:10:52.981Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:10:53.486Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:11:29.146Z info: User fetched successfully - IP: ::1
+2024-12-31T20:11:46.302Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:11:46.803Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:13:09.378Z info: User fetched successfully - IP: ::1
+2024-12-31T20:13:19.630Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:13:20.145Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:14:43.226Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:14:43.748Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:14:59.016Z info: User fetched successfully - IP: ::1
+2024-12-31T20:16:38.017Z info: User fetched successfully - IP: ::1
+2024-12-31T20:16:44.239Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:16:44.789Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:17:45.345Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:17:46.945Z info: User fetched successfully - IP: ::1
+2024-12-31T20:18:06.605Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:18:29.130Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:18:46.394Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:19:19.675Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:20:15.427Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:20:54.513Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:20:55.017Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:21:21.596Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:21:39.427Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:22:51.493Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:22:59.265Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:22:59.769Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:23:26.989Z info: User fetched successfully - IP: ::1
+2024-12-31T20:23:28.000Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:23:28.499Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:23:55.430Z info: User fetched successfully - IP: ::1
+2024-12-31T20:23:57.033Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:23:57.534Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:24:01.513Z warn: File content is the same - IP: ::1
+2024-12-31T20:24:16.323Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:28:35.467Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:28:55.322Z info: HTTP Server running on http://localhost:3000
+2024-12-31T20:31:03.500Z info: User fetched successfully - IP: ::1
+2024-12-31T20:31:08.711Z info: User fetched successfully - IP: ::1
+2024-12-31T20:33:42.069Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:33:42.611Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:33:51.458Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:36:50.934Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:36:51.437Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:36:55.473Z warn: File content is the same - IP: ::1
+2024-12-31T20:37:00.050Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:38:45.354Z info: User fetched successfully - IP: ::1
+2024-12-31T20:38:46.933Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:38:47.433Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:39:13.164Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:39:23.768Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:39:24.585Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:39:27.757Z warn: File content is the same - IP: ::1
+2024-12-31T20:39:35.570Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:39:36.070Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:40:00.059Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:41:49.741Z info: File content updated successfully - IP: ::1
+2024-12-31T20:41:55.675Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:41:56.179Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:42:03.095Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:43:36.792Z error: Invalid token: jwt expired - IP: ::1
+2024-12-31T20:43:46.731Z info: User logged in successfully - IP: ::1
+2024-12-31T20:43:46.862Z info: User fetched successfully - IP: ::1
+2024-12-31T20:43:48.490Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:43:48.997Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:43:52.284Z warn: File content is the same - IP: ::1
+2024-12-31T20:43:58.125Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:44:21.885Z warn: File content is the same - IP: ::1
+2024-12-31T20:44:26.104Z warn: File content is the same - IP: ::1
+2024-12-31T20:44:26.485Z info: User fetched successfully - IP: ::1
+2024-12-31T20:44:30.612Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:44:31.402Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:44:45.330Z info: User fetched successfully - IP: ::1
+2024-12-31T20:45:46.026Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:45:46.518Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:45:52.765Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:46:24.883Z info: User fetched successfully - IP: ::1
+2024-12-31T20:46:43.959Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:46:44.460Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:46:51.200Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:50:12.807Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:13.308Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:17.148Z info: User fetched successfully - IP: ::1
+2024-12-31T20:50:18.555Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:19.056Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:23.069Z warn: File content is the same - IP: ::1
+2024-12-31T20:50:36.155Z info: File content updated successfully - IP: ::1
+2024-12-31T20:50:39.262Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:39.763Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:45.532Z error: Error calling API Gateway: Error executing code - IP: ::1
+2024-12-31T20:50:47.671Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:48.171Z info: Folders fetched successfully - IP: ::1
+2024-12-31T20:50:55.218Z info: File content updated successfully - IP: ::1
+2024-12-31T20:50:59.705Z info: Successfully called API Gateway - IP: ::1
+2024-12-31T20:51:10.547Z info: File content updated successfully - IP: ::1
+2024-12-31T20:51:15.452Z info: Successfully called API Gateway - IP: ::1

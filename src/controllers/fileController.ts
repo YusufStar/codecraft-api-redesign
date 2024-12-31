@@ -197,3 +197,32 @@ export const updateFileContent = async (
     res.status(500).json({ message: "Error updating file content" });
   }
 };
+
+export const getFile = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const userId = req.user?.id;
+
+    if (!userId) {
+      logger.warn("User ID not found in request", req.ip);
+      res.status(401).json({ message: "Unauthorized" });
+      return;
+    }
+
+    const file = await prisma.file.findUnique({
+      where: { id },
+    });
+
+    if (!file) {
+      logger.warn("File not found", req.ip);
+      res.status(404).json({ message: "File not found" });
+      return;
+    }
+
+    logger.info("File fetched successfully", req.ip);
+    res.status(200).json(file);
+  } catch (error: any) {
+    logger.error(`Error fetching file: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error fetching file" });
+  }
+};

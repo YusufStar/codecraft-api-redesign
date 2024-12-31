@@ -10,10 +10,9 @@ import { config } from "dotenv";
 import multer from "multer";
 import { Upload } from "@aws-sdk/lib-storage";
 import { S3 } from "@aws-sdk/client-s3";
-import fs from "fs";
-import path from "path";
 import folderRoutes from "./routes/folderRoutes";
 import fileRoutes from "./routes/fileRoutes";
+import buildRoutes from "./routes/buildRoutes";
 
 config();
 const app = express();
@@ -100,6 +99,8 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/users", userRoutes);
 app.use("/folders", folderRoutes);
 app.use("/files", fileRoutes);
+app.use("/build", buildRoutes);
+
 
 app.listen(3000, () => {
   logger.info("HTTP Server running on http://localhost:3000");
