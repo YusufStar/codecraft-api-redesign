@@ -649,3 +649,112 @@ Unknown argument `language`. Available options are marked with ?. - IP: ::1
 2025-01-01T13:33:27.431Z info: User fetched successfully - IP: ::1
 2025-01-01T13:33:27.804Z info: Folders fetched successfully - IP: ::1
 2025-01-01T13:33:27.932Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:37:40.655Z info: HTTP Server running on http://localhost:3000
+2025-01-01T14:40:59.454Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T14:41:06.522Z info: User logged in successfully - IP: ::1
+2025-01-01T14:41:07.297Z info: User fetched successfully - IP: ::1
+2025-01-01T14:41:08.573Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:41:09.350Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:43:53.734Z info: User fetched successfully - IP: ::1
+2025-01-01T14:43:54.102Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:43:54.231Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:44:28.561Z info: User fetched successfully - IP: ::1
+2025-01-01T14:44:28.933Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:44:29.061Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:49:33.208Z info: User fetched successfully - IP: ::1
+2025-01-01T14:49:33.581Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:49:33.713Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:53:42.254Z info: User fetched successfully - IP: ::1
+2025-01-01T14:53:43.638Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:53:43.771Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:55:08.603Z info: User fetched successfully - IP: ::1
+2025-01-01T14:55:08.980Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:55:09.108Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T14:56:20.250Z info: User fetched successfully - IP: ::1
+2025-01-01T14:56:20.629Z info: Folders fetched successfully - IP: ::1
+2025-01-01T14:56:20.758Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:00:19.861Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:00:20.246Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:01:34.408Z error: Error deleting folder: 
+Invalid `prisma.folder.delete()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\folderController.ts:217:31
+
+  214   return;
+  215 }
+  216 
+→ 217 await prisma.folder.delete(
+The change you are trying to make would violate the required relation 'SubFolders' between the `Folder` and `Folder` models. - IP: ::1
+2025-01-01T15:01:37.985Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:01:38.354Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:06:53.231Z info: User fetched successfully - IP: ::1
+2025-01-01T15:06:53.595Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:06:53.724Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:07:26.072Z info: User fetched successfully - IP: ::1
+2025-01-01T15:07:26.433Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:07:26.561Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:08:56.699Z info: User fetched successfully - IP: ::1
+2025-01-01T15:08:57.065Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:08:57.194Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:13:45.963Z info: User fetched successfully - IP: ::1
+2025-01-01T15:13:47.344Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:13:47.468Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:14:04.458Z info: User fetched successfully - IP: ::1
+2025-01-01T15:14:04.815Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:14:04.943Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:16:00.116Z info: User fetched successfully - IP: ::1
+2025-01-01T15:16:00.478Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:16:00.607Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:18:03.630Z info: User fetched successfully - IP: ::1
+2025-01-01T15:18:03.994Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:18:04.123Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:19:10.977Z info: User fetched successfully - IP: ::1
+2025-01-01T15:19:11.338Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:19:11.466Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:20:03.891Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:20:04.248Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:22:38.312Z info: User fetched successfully - IP: ::1
+2025-01-01T15:22:38.672Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:22:38.801Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:23:07.890Z info: User fetched successfully - IP: ::1
+2025-01-01T15:23:08.263Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:23:08.391Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:23:10.947Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:23:11.303Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:23:14.702Z warn: File content is the same - IP: ::1
+2025-01-01T15:23:55.969Z warn: File content is the same - IP: ::1
+2025-01-01T15:24:07.807Z warn: File content is the same - IP: ::1
+2025-01-01T15:24:12.434Z info: User fetched successfully - IP: ::1
+2025-01-01T15:24:12.799Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:24:12.928Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:24:20.542Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:24:20.906Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:24:23.796Z warn: File content is the same - IP: ::1
+2025-01-01T15:24:31.261Z info: Successfully called API Gateway - IP: ::1
+2025-01-01T15:25:24.573Z info: File content updated successfully - IP: ::1
+2025-01-01T15:25:33.254Z info: Successfully called API Gateway - IP: ::1
+2025-01-01T15:25:41.120Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:25:45.020Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:25:49.899Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:25:56.086Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:26:48.752Z info: User fetched successfully - IP: ::1
+2025-01-01T15:26:49.133Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:26:49.258Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:26:53.846Z info: User fetched successfully - IP: ::1
+2025-01-01T15:26:54.219Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:26:54.348Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T15:31:25.991Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:31:26.348Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:31:33.610Z info: File created successfully - IP: ::1
+2025-01-01T15:31:33.971Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:31:36.655Z warn: File content is the same - IP: ::1
+2025-01-01T15:31:40.204Z info: File content updated successfully - IP: ::1
+2025-01-01T15:31:46.010Z info: Successfully called API Gateway - IP: ::1
+2025-01-01T15:32:03.687Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:32:07.725Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:32:10.893Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:32:17.732Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T15:32:24.613Z warn: File content is the same - IP: ::1
+2025-01-01T15:32:26.338Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:32:26.708Z info: Folders fetched successfully - IP: ::1
+2025-01-01T15:32:28.737Z info: File deleted successfully - IP: ::1
+2025-01-01T15:32:29.104Z info: Folders fetched successfully - IP: ::1
