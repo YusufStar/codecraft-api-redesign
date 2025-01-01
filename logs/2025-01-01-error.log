@@ -1,1 +1,63 @@
 2024-12-31T23:54:02.179Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T00:55:45.974Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T11:31:10.940Z error: Error updating editor settings: 
+Invalid `prisma.editorSettings.update()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\editorSettingsController.ts:63:63
+
+  60   return;
+  61 }
+  62 
+→ 63 const updatedEditorSettings = await prisma.editorSettings.update({
+       where: {
+         userId: "77f02790-811b-482a-9a4c-0fe97f5a41bd"
+       },
+       data: {
+         fontSize: 14,
+         language: "javascript",
+         ~~~~~~~~
+         theme: "dark-plus",
+         tabSize: 2,
+         wordWrap: false,
+         autoSave: false,
+         lineNumbers: true,
+         minimap: false,
+         id: "6515f101-5170-4c13-85a0-b9577609013b",
+         userId: "77f02790-811b-482a-9a4c-0fe97f5a41bd",
+         createdAt: "2025-01-01T11:19:19.762Z",
+         updatedAt: "2025-01-01T11:19:19.762Z",
+     ?   user?: UserUpdateOneRequiredWithoutEditorSettingsNestedInput
+       }
+     })
+
+Unknown argument `language`. Available options are marked with ?. - IP: ::1
+2025-01-01T11:34:22.814Z error: Error updating editor settings: 
+Invalid `prisma.editorSettings.update()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\editorSettingsController.ts:63:63
+
+  60   return;
+  61 }
+  62 
+→ 63 const updatedEditorSettings = await prisma.editorSettings.update({
+       where: {
+         userId: "56866a0d-cec4-40bb-9034-27b889af250a"
+       },
+       data: {
+         fontSize: 10,
+         language: "javascript",
+         ~~~~~~~~
+         theme: "dark-plus",
+         tabSize: 2,
+         wordWrap: true,
+         autoSave: false,
+         lineNumbers: true,
+         minimap: false,
+         id: "5e365e97-15c8-4fd9-875f-bd77571b7fb0",
+         userId: "56866a0d-cec4-40bb-9034-27b889af250a",
+         createdAt: "2025-01-01T11:32:42.610Z",
+         updatedAt: "2025-01-01T11:32:42.610Z",
+     ?   user?: UserUpdateOneRequiredWithoutEditorSettingsNestedInput
+       }
+     })
+
+Unknown argument `language`. Available options are marked with ?. - IP: ::1
+2025-01-01T12:32:41.185Z error: Invalid token: jwt expired - IP: ::1

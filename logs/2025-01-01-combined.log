@@ -12,3 +12,640 @@
 2024-12-31T23:54:34.005Z info: Folders fetched successfully - IP: ::1
 2024-12-31T23:54:37.644Z warn: File content is the same - IP: ::1
 2024-12-31T23:54:45.631Z info: Snippet created successfully - IP: ::1
+2025-01-01T00:55:38.824Z info: HTTP Server running on http://localhost:3000
+2025-01-01T00:55:38.893Z info: Received request at / - IP: ::1
+2025-01-01T00:55:45.973Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T10:39:34.226Z info: HTTP Server running on http://localhost:3000
+2025-01-01T10:45:05.247Z warn: No token provided - IP: ::1
+2025-01-01T10:45:05.251Z warn: No token provided - IP: ::1
+2025-01-01T10:46:28.079Z info: User logged in successfully - IP: ::1
+2025-01-01T10:46:28.859Z info: User fetched successfully - IP: ::1
+2025-01-01T10:46:32.130Z info: Folders fetched successfully - IP: ::1
+2025-01-01T10:46:32.626Z info: Folders fetched successfully - IP: ::1
+2025-01-01T10:46:36.820Z warn: File content is the same - IP: ::1
+2025-01-01T11:11:06.842Z info: HTTP Server running on http://localhost:3000
+2025-01-01T11:13:08.623Z info: HTTP Server running on http://localhost:3000
+2025-01-01T11:14:31.818Z info: User fetched successfully - IP: ::1
+2025-01-01T11:14:31.821Z info: User fetched successfully - IP: ::1
+2025-01-01T11:14:34.348Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:14:34.840Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:14:39.755Z warn: File content is the same - IP: ::1
+2025-01-01T11:19:17.552Z info: User fetched successfully - IP: ::1
+2025-01-01T11:19:18.989Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:19.946Z info: Default editor settings created - IP: ::1
+2025-01-01T11:19:19.947Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:19:38.326Z info: User fetched successfully - IP: ::1
+2025-01-01T11:19:38.802Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:38.929Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:19:42.946Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:43.423Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:46.550Z warn: File content is the same - IP: ::1
+2025-01-01T11:19:48.042Z info: User fetched successfully - IP: ::1
+2025-01-01T11:19:48.517Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:48.645Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:19:55.008Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:55.481Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:19:58.385Z warn: File content is the same - IP: ::1
+2025-01-01T11:22:33.062Z info: User fetched successfully - IP: ::1
+2025-01-01T11:22:33.536Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:22:33.665Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:22:35.204Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:22:35.678Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:22:38.484Z warn: File content is the same - IP: ::1
+2025-01-01T11:25:06.082Z info: User fetched successfully - IP: ::1
+2025-01-01T11:25:06.562Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:25:06.690Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:26:39.771Z info: User fetched successfully - IP: ::1
+2025-01-01T11:26:40.685Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:26:40.811Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:28:57.156Z info: User fetched successfully - IP: ::1
+2025-01-01T11:28:58.005Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:28:58.135Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:31:10.939Z error: Error updating editor settings: 
+Invalid `prisma.editorSettings.update()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\editorSettingsController.ts:63:63
+
+  60   return;
+  61 }
+  62 
+→ 63 const updatedEditorSettings = await prisma.editorSettings.update({
+       where: {
+         userId: "77f02790-811b-482a-9a4c-0fe97f5a41bd"
+       },
+       data: {
+         fontSize: 14,
+         language: "javascript",
+         ~~~~~~~~
+         theme: "dark-plus",
+         tabSize: 2,
+         wordWrap: false,
+         autoSave: false,
+         lineNumbers: true,
+         minimap: false,
+         id: "6515f101-5170-4c13-85a0-b9577609013b",
+         userId: "77f02790-811b-482a-9a4c-0fe97f5a41bd",
+         createdAt: "2025-01-01T11:19:19.762Z",
+         updatedAt: "2025-01-01T11:19:19.762Z",
+     ?   user?: UserUpdateOneRequiredWithoutEditorSettingsNestedInput
+       }
+     })
+
+Unknown argument `language`. Available options are marked with ?. - IP: ::1
+2025-01-01T11:32:25.106Z info: HTTP Server running on http://localhost:3000
+2025-01-01T11:32:32.328Z info: User registered successfully - IP: ::1
+2025-01-01T11:32:38.277Z warn: User not found with provided token - IP: ::1
+2025-01-01T11:32:40.429Z info: User logged in successfully - IP: ::1
+2025-01-01T11:32:40.579Z info: User fetched successfully - IP: ::1
+2025-01-01T11:32:41.420Z info: No folders found for the user - IP: ::1
+2025-01-01T11:32:43.162Z info: Default editor settings created - IP: ::1
+2025-01-01T11:32:43.163Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:32:47.928Z info: No folders found for the user - IP: ::1
+2025-01-01T11:32:48.060Z info: No folders found for the user - IP: ::1
+2025-01-01T11:32:57.067Z info: Folder created successfully - IP: ::1
+2025-01-01T11:33:59.365Z info: User fetched successfully - IP: ::1
+2025-01-01T11:33:59.617Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:33:59.785Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:34:00.605Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:34:01.164Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:34:03.688Z info: Folder created successfully - IP: ::1
+2025-01-01T11:34:04.070Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:34:08.317Z info: File created successfully - IP: ::1
+2025-01-01T11:34:08.694Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:34:11.553Z warn: File content is the same - IP: ::1
+2025-01-01T11:34:17.827Z info: File content updated successfully - IP: ::1
+2025-01-01T11:34:22.814Z error: Error updating editor settings: 
+Invalid `prisma.editorSettings.update()` invocation in
+C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\editorSettingsController.ts:63:63
+
+  60   return;
+  61 }
+  62 
+→ 63 const updatedEditorSettings = await prisma.editorSettings.update({
+       where: {
+         userId: "56866a0d-cec4-40bb-9034-27b889af250a"
+       },
+       data: {
+         fontSize: 10,
+         language: "javascript",
+         ~~~~~~~~
+         theme: "dark-plus",
+         tabSize: 2,
+         wordWrap: true,
+         autoSave: false,
+         lineNumbers: true,
+         minimap: false,
+         id: "5e365e97-15c8-4fd9-875f-bd77571b7fb0",
+         userId: "56866a0d-cec4-40bb-9034-27b889af250a",
+         createdAt: "2025-01-01T11:32:42.610Z",
+         updatedAt: "2025-01-01T11:32:42.610Z",
+     ?   user?: UserUpdateOneRequiredWithoutEditorSettingsNestedInput
+       }
+     })
+
+Unknown argument `language`. Available options are marked with ?. - IP: ::1
+2025-01-01T11:36:43.952Z info: HTTP Server running on http://localhost:3000
+2025-01-01T11:36:51.892Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:36:57.607Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:37:01.241Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:37:25.193Z info: User fetched successfully - IP: ::1
+2025-01-01T11:37:26.241Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:37:26.369Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:37:27.502Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:37:27.878Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:37:31.807Z warn: File content is the same - IP: ::1
+2025-01-01T11:38:17.625Z info: User fetched successfully - IP: ::1
+2025-01-01T11:38:17.998Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:38:18.126Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:38:19.607Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:38:19.985Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:38:23.054Z warn: File content is the same - IP: ::1
+2025-01-01T11:38:25.751Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:38:28.864Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:38:34.762Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:38:37.077Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:39:35.757Z info: User fetched successfully - IP: ::1
+2025-01-01T11:39:36.134Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:39:36.265Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:40:24.462Z warn: No token provided - IP: ::1
+2025-01-01T11:40:24.465Z warn: No token provided - IP: ::1
+2025-01-01T11:40:26.444Z info: User fetched successfully - IP: ::1
+2025-01-01T11:40:26.821Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:40:26.949Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:40:27.667Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:40:28.043Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:40:30.682Z warn: File content is the same - IP: ::1
+2025-01-01T11:40:32.121Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:40:37.822Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:40:40.904Z info: File content updated successfully - IP: ::1
+2025-01-01T11:40:49.706Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:40:53.302Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:41:03.262Z info: File content updated successfully - IP: ::1
+2025-01-01T11:41:05.703Z info: File content updated successfully - IP: ::1
+2025-01-01T11:42:17.294Z info: User fetched successfully - IP: ::1
+2025-01-01T11:42:17.726Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:42:17.848Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:42:27.419Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:42:38.849Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:42:39.294Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:43:22.285Z info: User fetched successfully - IP: ::1
+2025-01-01T11:43:22.728Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:43:22.852Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:43:24.307Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:43:25.016Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:43:27.284Z warn: File content is the same - IP: ::1
+2025-01-01T11:43:47.138Z warn: File content is the same - IP: ::1
+2025-01-01T11:43:56.419Z warn: File content is the same - IP: ::1
+2025-01-01T11:44:55.450Z warn: File content is the same - IP: ::1
+2025-01-01T11:45:05.508Z info: User fetched successfully - IP: ::1
+2025-01-01T11:45:05.897Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:06.044Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:45:07.539Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:07.927Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:10.573Z warn: File content is the same - IP: ::1
+2025-01-01T11:45:13.852Z warn: File content is the same - IP: ::1
+2025-01-01T11:45:16.447Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T11:45:18.912Z info: User fetched successfully - IP: ::1
+2025-01-01T11:45:19.304Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:19.447Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:45:20.789Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:21.162Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:45:24.454Z warn: File content is the same - IP: ::1
+2025-01-01T11:46:05.639Z info: User fetched successfully - IP: ::1
+2025-01-01T11:46:06.015Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:46:06.151Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:46:11.887Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:46:12.252Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:46:14.961Z warn: File content is the same - IP: ::1
+2025-01-01T11:46:35.142Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:15.740Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:22.589Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:23.961Z info: User fetched successfully - IP: ::1
+2025-01-01T11:47:24.353Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:47:24.481Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:47:26.141Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:47:26.517Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:47:29.086Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:39.444Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:44.103Z warn: File content is the same - IP: ::1
+2025-01-01T11:47:50.519Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:20.443Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:27.006Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:28.494Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:28.925Z info: User fetched successfully - IP: ::1
+2025-01-01T11:48:29.306Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:48:29.446Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:48:30.884Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:48:31.265Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:48:34.893Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:43.429Z warn: File content is the same - IP: ::1
+2025-01-01T11:48:59.212Z info: User fetched successfully - IP: ::1
+2025-01-01T11:48:59.588Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:48:59.724Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:49:02.839Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:03.211Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:05.727Z warn: File content is the same - IP: ::1
+2025-01-01T11:49:10.068Z warn: File content is the same - IP: ::1
+2025-01-01T11:49:10.599Z info: User fetched successfully - IP: ::1
+2025-01-01T11:49:10.969Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:11.104Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:49:24.986Z info: User fetched successfully - IP: ::1
+2025-01-01T11:49:25.364Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:25.503Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:49:26.511Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:26.887Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:49:30.306Z warn: File content is the same - IP: ::1
+2025-01-01T11:49:40.421Z warn: File content is the same - IP: ::1
+2025-01-01T11:49:45.427Z warn: File content is the same - IP: ::1
+2025-01-01T11:49:51.503Z warn: File content is the same - IP: ::1
+2025-01-01T11:50:04.142Z info: User fetched successfully - IP: ::1
+2025-01-01T11:50:04.514Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:50:04.650Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:50:06.050Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:50:06.426Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:50:08.950Z warn: File content is the same - IP: ::1
+2025-01-01T11:51:13.011Z info: User fetched successfully - IP: ::1
+2025-01-01T11:51:13.390Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:51:13.531Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:51:14.273Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:51:14.659Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:51:17.387Z warn: File content is the same - IP: ::1
+2025-01-01T11:51:42.855Z info: User fetched successfully - IP: ::1
+2025-01-01T11:51:43.227Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:51:43.355Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:00.556Z info: User fetched successfully - IP: ::1
+2025-01-01T11:52:00.947Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:01.091Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:06.673Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:07.060Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:24.140Z info: User fetched successfully - IP: ::1
+2025-01-01T11:52:24.512Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:24.648Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:25.726Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:26.100Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:28.578Z warn: File content is the same - IP: ::1
+2025-01-01T11:52:29.641Z info: User fetched successfully - IP: ::1
+2025-01-01T11:52:30.029Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:30.153Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:30.858Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:31.257Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:33.920Z warn: File content is the same - IP: ::1
+2025-01-01T11:52:39.989Z warn: File content is the same - IP: ::1
+2025-01-01T11:52:40.810Z info: User fetched successfully - IP: ::1
+2025-01-01T11:52:41.206Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:41.343Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:42.048Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:42.428Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:44.875Z warn: File content is the same - IP: ::1
+2025-01-01T11:52:45.736Z info: User fetched successfully - IP: ::1
+2025-01-01T11:52:46.109Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:46.233Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:52:48.793Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:49.161Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:52:52.168Z warn: File content is the same - IP: ::1
+2025-01-01T11:53:29.007Z info: User fetched successfully - IP: ::1
+2025-01-01T11:53:29.378Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:53:29.502Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:53:33.707Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:53:34.076Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:55:42.876Z info: User fetched successfully - IP: ::1
+2025-01-01T11:55:43.248Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:55:43.730Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:55:44.664Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:55:45.034Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:55:48.791Z warn: File content is the same - IP: ::1
+2025-01-01T11:56:57.851Z info: User fetched successfully - IP: ::1
+2025-01-01T11:56:58.224Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:56:58.348Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:57:00.461Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:57:00.834Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:57:04.949Z warn: File content is the same - IP: ::1
+2025-01-01T11:59:50.531Z info: User fetched successfully - IP: ::1
+2025-01-01T11:59:50.905Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:59:51.032Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T11:59:52.141Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:59:52.509Z info: Folders fetched successfully - IP: ::1
+2025-01-01T11:59:55.058Z warn: File content is the same - IP: ::1
+2025-01-01T12:06:52.240Z info: User fetched successfully - IP: ::1
+2025-01-01T12:06:52.609Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:06:52.733Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:07:40.291Z info: User fetched successfully - IP: ::1
+2025-01-01T12:07:40.668Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:07:40.792Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:07:54.413Z info: User fetched successfully - IP: ::1
+2025-01-01T12:07:54.790Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:07:55.275Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:08:16.804Z info: User fetched successfully - IP: ::1
+2025-01-01T12:08:17.178Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:08:17.301Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:08:19.446Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:08:19.815Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:08:22.530Z warn: File content is the same - IP: ::1
+2025-01-01T12:08:49.111Z info: User fetched successfully - IP: ::1
+2025-01-01T12:08:49.484Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:08:49.607Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:10:12.358Z info: User fetched successfully - IP: ::1
+2025-01-01T12:10:12.731Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:10:12.855Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:11:10.273Z info: User fetched successfully - IP: ::1
+2025-01-01T12:11:10.646Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:11:10.770Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:11:13.781Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:11:14.150Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:12:54.603Z info: User fetched successfully - IP: ::1
+2025-01-01T12:12:54.972Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:12:55.096Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:13:50.245Z info: User fetched successfully - IP: ::1
+2025-01-01T12:13:50.618Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:13:50.742Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:15:29.058Z info: User fetched successfully - IP: ::1
+2025-01-01T12:15:29.430Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:15:29.555Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:15:31.443Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:15:31.808Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:18:34.238Z info: User fetched successfully - IP: ::1
+2025-01-01T12:18:34.606Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:18:34.730Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:18:37.930Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:18:38.295Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:18:44.531Z warn: File content is the same - IP: ::1
+2025-01-01T12:18:44.599Z info: User fetched successfully - IP: ::1
+2025-01-01T12:18:44.972Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:18:45.096Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:19:05.025Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:19:05.397Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:22.210Z info: User fetched successfully - IP: ::1
+2025-01-01T12:20:22.583Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:22.707Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:20:23.731Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:24.100Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:27.413Z warn: File content is the same - IP: ::1
+2025-01-01T12:20:32.415Z warn: File content is the same - IP: ::1
+2025-01-01T12:20:47.475Z info: User fetched successfully - IP: ::1
+2025-01-01T12:20:47.848Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:47.971Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:20:48.693Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:49.062Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:20:52.417Z warn: File content is the same - IP: ::1
+2025-01-01T12:21:16.412Z warn: File content is the same - IP: ::1
+2025-01-01T12:21:29.750Z info: User fetched successfully - IP: ::1
+2025-01-01T12:21:30.119Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:21:30.247Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:21:30.968Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:21:31.337Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:21:34.406Z warn: File content is the same - IP: ::1
+2025-01-01T12:21:39.419Z warn: File content is the same - IP: ::1
+2025-01-01T12:21:45.959Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T12:21:49.908Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:10.053Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:14.791Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:15.656Z info: User fetched successfully - IP: ::1
+2025-01-01T12:22:16.049Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:16.180Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:22:18.135Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:18.503Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:21.381Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:31.416Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:41.744Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:42.329Z info: User fetched successfully - IP: ::1
+2025-01-01T12:22:42.702Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:42.826Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:22:43.397Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:43.765Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:22:47.702Z warn: File content is the same - IP: ::1
+2025-01-01T12:22:58.422Z warn: File content is the same - IP: ::1
+2025-01-01T12:23:12.399Z warn: File content is the same - IP: ::1
+2025-01-01T12:23:14.006Z warn: File content is the same - IP: ::1
+2025-01-01T12:23:17.415Z warn: File content is the same - IP: ::1
+2025-01-01T12:23:22.411Z warn: File content is the same - IP: ::1
+2025-01-01T12:23:33.427Z warn: File content is the same - IP: ::1
+2025-01-01T12:24:07.096Z info: User fetched successfully - IP: ::1
+2025-01-01T12:24:07.469Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:24:07.593Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:24:12.286Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:24:12.654Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:24:15.536Z warn: File content is the same - IP: ::1
+2025-01-01T12:24:38.783Z info: User fetched successfully - IP: ::1
+2025-01-01T12:24:39.164Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:24:39.288Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:24:40.468Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:24:40.844Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:04.693Z info: User fetched successfully - IP: ::1
+2025-01-01T12:25:05.070Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:05.194Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:25:05.904Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:06.272Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:38.930Z info: User fetched successfully - IP: ::1
+2025-01-01T12:25:39.295Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:39.419Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:25:41.669Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:25:42.033Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:12.329Z info: User fetched successfully - IP: ::1
+2025-01-01T12:28:12.698Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:12.822Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:28:13.769Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:14.137Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:25.326Z info: User fetched successfully - IP: ::1
+2025-01-01T12:28:25.699Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:25.823Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:28:26.591Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:28:26.960Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:29:05.642Z info: User fetched successfully - IP: ::1
+2025-01-01T12:29:06.012Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:29:06.136Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:29:37.460Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:29:37.828Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:30:20.278Z info: User fetched successfully - IP: ::1
+2025-01-01T12:30:20.650Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:30:20.774Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:30:21.496Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:30:21.860Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:30:24.633Z warn: File content is the same - IP: ::1
+2025-01-01T12:30:32.316Z info: File content updated successfully - IP: ::1
+2025-01-01T12:30:34.788Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:30:35.157Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:32:05.708Z info: User fetched successfully - IP: ::1
+2025-01-01T12:32:06.081Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:32:06.206Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:32:41.185Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T12:32:43.118Z info: User logged in successfully - IP: ::1
+2025-01-01T12:32:43.244Z info: User fetched successfully - IP: ::1
+2025-01-01T12:32:43.610Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:32:43.734Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:32:44.467Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:32:44.838Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:13.785Z info: User fetched successfully - IP: ::1
+2025-01-01T12:33:14.160Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:14.286Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:33:32.984Z info: User fetched successfully - IP: ::1
+2025-01-01T12:33:33.350Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:33.473Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:33:34.435Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:34.804Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:38.599Z warn: File content is the same - IP: ::1
+2025-01-01T12:33:56.685Z info: User fetched successfully - IP: ::1
+2025-01-01T12:33:57.058Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:33:57.182Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:35:10.891Z info: User fetched successfully - IP: ::1
+2025-01-01T12:35:11.279Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:35:11.403Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:35:47.214Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:35:47.582Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:35:52.500Z info: User fetched successfully - IP: ::1
+2025-01-01T12:35:52.875Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:35:52.997Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:35:53.982Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:35:54.351Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:36:04.441Z info: User fetched successfully - IP: ::1
+2025-01-01T12:36:04.817Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:36:04.946Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:36:09.665Z info: User fetched successfully - IP: ::1
+2025-01-01T12:36:10.034Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:36:10.158Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:37:53.109Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:37:53.478Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:39:49.309Z info: User fetched successfully - IP: ::1
+2025-01-01T12:39:49.682Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:39:49.806Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:40:09.856Z info: User fetched successfully - IP: ::1
+2025-01-01T12:40:10.225Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:40:10.349Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:40:25.952Z info: User fetched successfully - IP: ::1
+2025-01-01T12:40:26.321Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:40:26.445Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T12:40:47.324Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:40:47.692Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:42:30.997Z info: User fetched successfully - IP: ::1
+2025-01-01T12:42:31.376Z info: Folders fetched successfully - IP: ::1
+2025-01-01T12:42:31.506Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:02:50.747Z info: User fetched successfully - IP: ::1
+2025-01-01T13:02:52.132Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:02:53.274Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:03:15.536Z info: User fetched successfully - IP: ::1
+2025-01-01T13:03:15.928Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:03:16.056Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:06:00.471Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:06:27.532Z info: User fetched successfully - IP: ::1
+2025-01-01T13:06:27.930Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:06:28.058Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:07:11.683Z info: User fetched successfully - IP: ::1
+2025-01-01T13:07:12.059Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:07:12.190Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:07:13.466Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:07:13.838Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:07:17.731Z warn: File content is the same - IP: ::1
+2025-01-01T13:07:28.653Z warn: File content is the same - IP: ::1
+2025-01-01T13:07:48.369Z warn: File content is the same - IP: ::1
+2025-01-01T13:08:06.093Z info: User fetched successfully - IP: ::1
+2025-01-01T13:08:06.465Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:08:06.593Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:09:39.515Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:09:39.887Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:09:42.365Z warn: File content is the same - IP: ::1
+2025-01-01T13:09:45.147Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:09:50.288Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:09:53.895Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:00.792Z warn: File content is the same - IP: ::1
+2025-01-01T13:10:04.288Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:11.249Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:15.993Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:19.914Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:24.887Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:28.440Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:31.012Z info: Editor settings updated successfully - IP: ::1
+2025-01-01T13:10:36.413Z warn: File content is the same - IP: ::1
+2025-01-01T13:11:29.799Z info: User fetched successfully - IP: ::1
+2025-01-01T13:11:30.175Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:30.303Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:11:38.161Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:38.533Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:42.409Z info: User fetched successfully - IP: ::1
+2025-01-01T13:11:42.780Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:42.908Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:11:43.909Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:44.281Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:11:46.813Z warn: File content is the same - IP: ::1
+2025-01-01T13:11:57.607Z warn: File content is the same - IP: ::1
+2025-01-01T13:14:45.527Z info: User fetched successfully - IP: ::1
+2025-01-01T13:14:45.956Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:14:46.135Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:15:23.232Z info: User fetched successfully - IP: ::1
+2025-01-01T13:15:23.608Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:15:23.736Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:16:06.355Z info: User fetched successfully - IP: ::1
+2025-01-01T13:16:08.065Z info: User logged in successfully - IP: ::1
+2025-01-01T13:16:08.202Z info: User fetched successfully - IP: ::1
+2025-01-01T13:16:08.578Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:16:08.706Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:16:19.545Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:16:19.914Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:16:47.146Z info: User fetched successfully - IP: ::1
+2025-01-01T13:16:47.523Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:16:47.650Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:18:13.120Z info: User fetched successfully - IP: ::1
+2025-01-01T13:18:13.488Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:18:13.617Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:18:26.919Z info: User fetched successfully - IP: ::1
+2025-01-01T13:18:27.292Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:18:30.844Z info: User fetched successfully - IP: ::1
+2025-01-01T13:18:31.221Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:18:31.348Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:20:00.842Z info: User fetched successfully - IP: ::1
+2025-01-01T13:20:01.218Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:20:01.347Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:20:30.242Z info: User fetched successfully - IP: ::1
+2025-01-01T13:20:30.618Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:20:30.746Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:20:47.602Z info: User fetched successfully - IP: ::1
+2025-01-01T13:20:47.975Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:20:48.103Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:21:28.836Z info: User fetched successfully - IP: ::1
+2025-01-01T13:21:29.212Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:21:29.340Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:22:38.949Z info: User fetched successfully - IP: ::1
+2025-01-01T13:22:39.332Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:22:39.499Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:23:36.435Z info: User fetched successfully - IP: ::1
+2025-01-01T13:23:36.813Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:23:36.941Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:23:49.461Z info: User fetched successfully - IP: ::1
+2025-01-01T13:23:49.834Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:23:49.972Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:24:43.858Z info: User fetched successfully - IP: ::1
+2025-01-01T13:24:44.283Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:24:44.433Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:25:27.082Z info: User fetched successfully - IP: ::1
+2025-01-01T13:25:27.488Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:25:27.657Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:25:41.156Z info: User fetched successfully - IP: ::1
+2025-01-01T13:25:41.533Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:25:41.660Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:26:01.930Z info: User fetched successfully - IP: ::1
+2025-01-01T13:26:02.307Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:26:02.435Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:26:16.515Z info: User fetched successfully - IP: ::1
+2025-01-01T13:26:16.892Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:26:17.020Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:27:11.447Z info: User fetched successfully - IP: ::1
+2025-01-01T13:27:11.823Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:27:11.951Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:28:04.683Z info: User fetched successfully - IP: ::1
+2025-01-01T13:28:05.068Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:28:05.195Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:28:40.626Z info: User fetched successfully - IP: ::1
+2025-01-01T13:28:40.999Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:28:41.127Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:29:26.612Z info: User fetched successfully - IP: ::1
+2025-01-01T13:29:26.985Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:29:27.113Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:29:56.199Z info: User fetched successfully - IP: ::1
+2025-01-01T13:29:56.571Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:29:56.699Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:31:24.500Z info: User fetched successfully - IP: ::1
+2025-01-01T13:31:24.874Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:31:25.002Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:32:23.323Z info: User fetched successfully - IP: ::1
+2025-01-01T13:32:23.695Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:32:23.824Z info: Editor settings fetched successfully - IP: ::1
+2025-01-01T13:33:27.431Z info: User fetched successfully - IP: ::1
+2025-01-01T13:33:27.804Z info: Folders fetched successfully - IP: ::1
+2025-01-01T13:33:27.932Z info: Editor settings fetched successfully - IP: ::1

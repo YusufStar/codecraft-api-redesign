@@ -14,6 +14,7 @@ import folderRoutes from "./routes/folderRoutes";
 import fileRoutes from "./routes/fileRoutes";
 import buildRoutes from "./routes/buildRoutes";
 import snippetRoutes from "./routes/snippetRoutes";
+import editorSettingsRoutes from "./routes/editorSettingsRoutes";
 
 config();
 const app = express();
@@ -102,6 +103,7 @@ app.use("/folders", folderRoutes);
 app.use("/files", fileRoutes);
 app.use("/build", buildRoutes);
 app.use("/snippets", snippetRoutes);
+app.use("/editor-settings", editorSettingsRoutes);
 
 
 app.listen(3000, () => {
