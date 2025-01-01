@@ -71,3 +71,5 @@ C:\Users\yyili\Desktop\CodeCraftDev\server\src\controllers\folderController.ts:2
   216 
 → 217 await prisma.folder.delete(
 The change you are trying to make would violate the required relation 'SubFolders' between the `Folder` and `Folder` models. - IP: ::1
+2025-01-01T18:05:03.404Z error: Invalid token: jwt expired - IP: ::1
+2025-01-01T19:47:35.059Z error: Invalid token: jwt expired - IP: ::1
