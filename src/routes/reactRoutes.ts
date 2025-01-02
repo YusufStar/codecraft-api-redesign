@@ -10,6 +10,7 @@ import {
   updateFileName,
   updateFileContent,
   updateFolderName,
+  deleteFile,
 } from "../controllers/reactController";
 import { authRequire } from "../middleware";
 
@@ -25,5 +26,6 @@ router.get("/:projectId/files", authRequire, getProjectFiles);
 router.put("/:projectId/files/name", authRequire, updateFileName);
 router.put("/:projectId/files/content", authRequire, updateFileContent);
 router.put("/:projectId/folders/name", authRequire, updateFolderName);
+router.delete("/:projectId/files", authRequire, deleteFile);
 
 export default router;

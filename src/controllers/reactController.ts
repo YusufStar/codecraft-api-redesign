@@ -558,6 +558,53 @@ export const updateFolderName = async (
   }
 };
 
+export const deleteFile = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { projectId } = req.params;
+    const { filename } = req.body;
+
+    if (!projectId) {
+      logger.warn("Project ID missing", req.ip);
+      res.status(400).json({ message: "Project ID is required" });
+      return;
+    }
+
+    if (!filename) {
+      logger.warn("Filename missing", req.ip);
+      res.status(400).json({ message: "Filename is required" });
+      return;
+    }
+
+    const project = await prisma.reactProjects.findUnique({
+      where: {
+        id: projectId,
+      },
+    });
+
+    if (!project) {
+      logger.warn("Project not found", req.ip);
+      res.status(404).json({ message: "Project not found" });
+      return;
+    }
+
+    const filePath = path.join(
+      __dirname,
+      "../../storage",
+      filename
+    );
+
+    await fs.unlink(filePath);
+
+    res.status(200).json({ message: "File deleted successfully" });
+  } catch (error: any) {
+    logger.error(`Error deleting file: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error deleting file" });
+  }
+};
+
 export default {
   getProjects: getAllProjects,
   createProject: creteApp,
@@ -568,4 +615,5 @@ export default {
   updateFileName: updateFileName,
   updateFileContent: updateFileContent,
   updateFolderName: updateFolderName,
+  deleteFile: deleteFile,
 };
