@@ -54,33 +54,35 @@ export const creteApp = async (req: Request, res: Response): Promise<void> => {
 
     const existingApp = await prisma.reactProjects.findFirst({
       where: {
-        AND: [{ userId: userId }, { name: name }],
+        userId,
+        name,
       },
     });
 
     if (existingApp) {
-      logger.warn("App already exists", (req as any).ip);
+      logger.warn("App already exists", req.ip);
       res.status(400).json({ message: "App already exists" });
       return;
     }
 
     const appPath = path.join(__dirname, "../../storage", userId, name);
+    const port = generateUniquePort();
 
-    await execPromise(`yarn create react-app ${appPath}`);
+    await execPromise(`npx create-react-app ${appPath}`);
 
     const newApp = await prisma.reactProjects.create({
       data: {
-        name: name,
-        userId: userId,
+        name,
+        userId,
         realPath: appPath,
-        port: generateUniquePort(),
+        port,
       },
     });
 
-    logger.info("App created successfully", (req as any).ip);
+    logger.info(`App created: ${name}`, req.ip);
     res.status(201).json(newApp);
   } catch (error: any) {
-    logger.error(`Error creating app: ${error.message}`, (req as any).ip);
+    logger.error(`Error creating app: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error creating app" });
   }
 };
@@ -100,16 +102,13 @@ export const getAllProjects = async (
 
     const projects = await prisma.reactProjects.findMany({
       where: {
-        userId: userId,
+        userId,
       },
     });
 
     res.status(200).json(projects);
   } catch (error: any) {
-    logger.error(
-      `Error getting all projects: ${error.message}`,
-      (req as any).ip
-    );
+    logger.error(`Error getting all projects: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error getting all projects" });
   }
 };
@@ -139,17 +138,17 @@ export const getDependency = async (
       return;
     }
 
-    const packageJsonPath = path.join(project.realPath, "package.json");
+    const appPath = project.realPath;
+
+    const packageJsonPath = path.join(appPath, "package.json");
 
     const packageJson = await fs.readFile(packageJsonPath, "utf-8");
+
     const dependencies = JSON.parse(packageJson).dependencies;
 
     res.status(200).json(dependencies);
   } catch (error: any) {
-    logger.error(
-      `Error getting dependencies: ${error.message}`,
-      (req as any).ip
-    );
+    logger.error(`Error getting dependencies: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error getting dependencies" });
   }
 };
@@ -162,15 +161,8 @@ export const addDependency = async (
     const { projectId } = req.params;
     const { dependency } = req.body;
 
-    if (!projectId) {
-      logger.warn("Project ID missing", req.ip);
-      res.status(400).json({ message: "Project ID is required" });
-      return;
-    }
-
     if (!dependency) {
-      logger.warn("Dependency missing", req.ip);
-      res.status(400).json({ message: "Dependency is required" });
+      res.status(400).send({ message: "Dependency is required" });
       return;
     }
 
@@ -181,19 +173,16 @@ export const addDependency = async (
     });
 
     if (!project) {
-      logger.warn("Project not found", req.ip);
-      res.status(404).json({ message: "Project not found" });
+      res.status(404).send({ message: "Project not found" });
       return;
     }
 
-    const appPath = project.realPath;
+    execPromise(`cd ${project.realPath} && yarn add ${dependency}`);
 
-    await execPromise(`cd ${appPath} && yarn add ${dependency}`);
-
-    res.status(200).json({ message: "Dependency added successfully" });
-  } catch (error: any) {
-    logger.error(`Error adding dependency: ${error.message}`, (req as any).ip);
-    res.status(500).json({ message: "Error adding dependency" });
+    res.status(200).send({ message: "Dependency added successfully" });
+  } catch (error) {
+    console.error("Failed to add dependency:", error);
+    res.status(500).send({ message: "Failed to add dependency" });
   }
 };
 
@@ -235,10 +224,7 @@ export const removeDependency = async (
 
     res.status(200).json({ message: "Dependency removed successfully" });
   } catch (error: any) {
-    logger.error(
-      `Error removing dependency: ${error.message}`,
-      (req as any).ip
-    );
+    logger.error(`Error removing dependency: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error removing dependency" });
   }
 };
@@ -299,28 +285,43 @@ export const runProject = async (
   }
 };
 
-const getAllFiles = async (dir: string): Promise<{ filename: string; content: string }[]> => {
+const getAllFiles = async (
+  dir: string,
+  req: Request
+): Promise<{ filename: string; content: string }[]> => {
   const files: { filename: string; content: string }[] = [];
   const items = await fs.readdir(dir, { withFileTypes: true });
 
   for (const item of items) {
-    if (item.name === "node_modules" || item.name === "build" || item.name.startsWith(".")) {
+    if (
+      item.name === "node_modules" ||
+      item.name === "build" ||
+      item.name === "yarn.lock" ||
+      item.name === "public" ||
+      item.name.includes(".png") ||
+      item.name.includes(".ico") ||
+      item.name.startsWith(".")
+    ) {
       continue;
     }
 
     const fullPath = path.join(dir, item.name);
 
     if (item.isDirectory()) {
-      const subFiles = await getAllFiles(fullPath);
+      const subFiles = await getAllFiles(fullPath, req);
       files.push(...subFiles);
     } else {
       const content = await fs.readFile(fullPath, "utf-8");
-      files.push({ filename: fullPath.replace(path.join(__dirname, "../../storage"), "").replace(/\\/g, "/"), content });
+      files.push({
+        filename: fullPath
+          .replace(path.join(__dirname, "../../storage"), "")
+          .replace(/\\/g, "/"),
+        content,
+      });
     }
   }
   return files;
 };
-
 
 export const getProjectFiles = async (
   req: Request,
@@ -348,11 +349,63 @@ export const getProjectFiles = async (
     }
 
     const appPath = project.realPath;
-    const files = await getAllFiles(appPath);
+    const files = await getAllFiles(appPath, req);
 
-    res.status(200).json(files);
+    const folderStructure = createFolderStructure(files);
+
+    res.status(200).json(Object.values(folderStructure));
   } catch (error: any) {
-    logger.error(`Error getting project files: ${error.message}`, (req as any).ip);
+    logger.error(
+      `Error getting project files: ${error.message}`,
+      (req as any).ip
+    );
     res.status(500).json({ message: "Error getting project files" });
   }
+};
+
+function createFolderStructure(
+  files: { filename: string; content: string }[]
+): { [key: string]: any } {
+  const root: { [key: string]: any } = {};
+
+  for (const file of files) {
+    const pathParts = file.filename.split("/").filter(Boolean);
+    let current = root;
+    let currentPath = "";
+
+    for (let i = 1; i < pathParts.length - 1; i++) {
+      const part = pathParts[i];
+      currentPath += `/${part}`;
+      if (!current[part]) {
+        current[part] = {
+          isFolder: true,
+          children: {},
+          id: currentPath,
+          name: part,
+          type: "folder",
+        };
+      }
+      current = current[part].children;
+    }
+
+    const fileName = pathParts[pathParts.length - 1];
+    current[fileName] = {
+      ...file,
+      isFile: true,
+      id: file.filename,
+      name: fileName,
+      type: "file",
+    };
+  }
+
+  return root;
+}
+
+export default {
+  getProjects: getAllProjects,
+  createProject: creteApp,
+  getProject: getProjectFiles,
+  getDependencies: getDependency,
+  removeDependency: removeDependency,
+  addDependency: addDependency,
 };
