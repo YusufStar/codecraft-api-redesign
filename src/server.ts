@@ -15,6 +15,7 @@ import fileRoutes from "./routes/fileRoutes";
 import buildRoutes from "./routes/buildRoutes";
 import snippetRoutes from "./routes/snippetRoutes";
 import editorSettingsRoutes from "./routes/editorSettingsRoutes";
+import reactRoutes from "./routes/reactRoutes";
 
 config();
 const app = express();
@@ -104,6 +105,7 @@ app.use("/files", fileRoutes);
 app.use("/build", buildRoutes);
 app.use("/snippets", snippetRoutes);
 app.use("/editor-settings", editorSettingsRoutes);
+app.use("/react", reactRoutes);
 
 
 app.listen(3000, () => {

@@ -42,7 +42,9 @@ export const build = async (req: Request, res: Response): Promise<void> => {
 
     if (!response.ok) {
       logger.error(`Error calling API Gateway: ${data.message}`, req.ip);
-      res.status(500).json({ message: "Error calling API Gateway", error: data.message });
+      res
+        .status(500)
+        .json({ message: "Error calling API Gateway", error: data.message });
       return;
     }
 
@@ -52,4 +54,4 @@ export const build = async (req: Request, res: Response): Promise<void> => {
     logger.error(`Error in build: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error in build" });
   }
-}; 
+};
