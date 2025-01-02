@@ -401,6 +401,163 @@ function createFolderStructure(
   return root;
 }
 
+export const updateFileName = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { projectId } = req.params;
+    const { oldFilename, newFilename } = req.body;
+
+    if (!projectId) {
+      logger.warn("Project ID missing", req.ip);
+      res.status(400).json({ message: "Project ID is required" });
+      return;
+    }
+
+    if (!oldFilename || !newFilename) {
+      logger.warn("Old or new filename missing", req.ip);
+      res
+        .status(400)
+        .json({ message: "Old and new filenames are required" });
+      return;
+    }
+
+    const project = await prisma.reactProjects.findUnique({
+      where: {
+        id: projectId,
+      },
+    });
+
+    if (!project) {
+      logger.warn("Project not found", req.ip);
+      res.status(404).json({ message: "Project not found" });
+      return;
+    }
+    
+    const oldPath = path.join(
+      __dirname,
+      "../../storage",
+      oldFilename
+    );
+    const newPath = path.join(
+      __dirname,
+      "../../storage",
+      newFilename
+    );
+
+    await fs.rename(oldPath, newPath);
+
+    res.status(200).json({ message: "File name updated successfully" });
+  } catch (error: any) {
+    logger.error(`Error updating file name: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error updating file name" });
+  }
+};
+
+export const updateFileContent = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { projectId } = req.params;
+    const { filename, content } = req.body;
+
+    if (!projectId) {
+      logger.warn("Project ID missing", req.ip);
+      res.status(400).json({ message: "Project ID is required" });
+      return;
+    }
+
+    if (!filename || content === undefined) {
+      logger.warn("Filename or content missing", req.ip);
+      res
+        .status(400)
+        .json({ message: "Filename and content are required" });
+      return;
+    }
+
+    const project = await prisma.reactProjects.findUnique({
+      where: {
+        id: projectId,
+      },
+    });
+
+    if (!project) {
+      logger.warn("Project not found", req.ip);
+      res.status(404).json({ message: "Project not found" });
+      return;
+    }
+
+    const filePath = path.join(
+      __dirname,
+      "../../storage",
+      filename
+    );
+
+    await fs.writeFile(filePath, content, "utf-8");
+
+    res.status(200).json({ message: "File content updated successfully" });
+  } catch (error: any) {
+    logger.error(`Error updating file content: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error updating file content" });
+  }
+};
+
+export const updateFolderName = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { projectId } = req.params;
+    const { oldFilename, newFilename } = req.body;
+
+    if (!projectId) {
+      logger.warn("Project ID missing", req.ip);
+      res.status(400).json({ message: "Project ID is required" });
+      return;
+    }
+
+    if (!oldFilename || !newFilename) {
+      logger.warn("Old or new filename missing", req.ip);
+      res
+        .status(400)
+        .json({ message: "Old and new filenames are required" });
+      return;
+    }
+
+    const project = await prisma.reactProjects.findUnique({
+      where: {
+        id: projectId,
+      },
+    });
+
+    if (!project) {
+      logger.warn("Project not found", req.ip);
+      res.status(404).json({ message: "Project not found" });
+      return;
+    }
+
+    const oldPath = path.join(
+      __dirname,
+      "../../storage",
+      oldFilename
+    );
+    const newPath = path.join(
+      __dirname,
+      "../../storage",
+      newFilename
+    );
+
+    await fs.rename(oldPath, newPath);
+
+    res.status(200).json({ message: "Folder name updated successfully" });
+  } catch (error: any) {
+    logger.error(`Error updating folder name: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error updating folder name" });
+  }
+};
+
 export default {
   getProjects: getAllProjects,
   createProject: creteApp,
@@ -408,4 +565,7 @@ export default {
   getDependencies: getDependency,
   removeDependency: removeDependency,
   addDependency: addDependency,
+  updateFileName: updateFileName,
+  updateFileContent: updateFileContent,
+  updateFolderName: updateFolderName,
 };
