@@ -4,6 +4,7 @@ import logger from "../utils/logger";
 import path from "path";
 import { Request, Response } from "express";
 import fs from "fs/promises";
+import { spawn } from "child_process";
 
 const execPromise = (command: string): Promise<string> => {
   return new Promise((resolve, reject) => {
@@ -243,9 +244,7 @@ export const runProject = async (
     }
 
     const project = await prisma.reactProjects.findUnique({
-      where: {
-        id: projectId,
-      },
+      where: { id: projectId },
     });
 
     if (!project) {
@@ -263,24 +262,33 @@ export const runProject = async (
     const appPath = project.realPath;
     const port = project.port;
 
-    const childProcess = exec(`cd ${appPath} && yarn start --port ${port}`);
+    console.log(appPath);
+
+    const childProcess = spawn(`yarn cross-env PORT=${port} yarn start`, {
+      cwd: appPath,
+      shell: true,
+      env: process.env,
+    });
+
+    childProcess.stdout.on("data", (data) => {
+      logger.info(`Project ${projectId} output: ${data}`);
+    });
+
+    childProcess.stderr.on("data", (data) => {
+      logger.error(`Project ${projectId} error: ${data}`);
+    });
+
+    childProcess.on("close", (code) => {
+      logger.info(`Project ${projectId} stopped with code ${code}`);
+      delete runningProjects[projectId];
+    });
 
     runningProjects[projectId] = { process: childProcess };
 
-    childProcess.on("error", (error: any) => {
-      logger.error(`Error running project: ${error.message}`, (req as any).ip);
-      delete runningProjects[projectId];
-    });
-
-    childProcess.on("close", (code: any) => {
-      logger.info(`Project stopped with code ${code}`, (req as any).ip);
-      delete runningProjects[projectId];
-    });
-
-    logger.info(`Project started on port ${port}`, (req as any).ip);
-    res.status(200).json({ message: `Project started on port ${port}` });
+    logger.info(`Project started on port ${port}`, req.ip);
+    res.status(200).json({ message: `Project started on port ${port}`, port });
   } catch (error: any) {
-    logger.error(`Error running project: ${error.message}`, (req as any).ip);
+    logger.error(`Error running project: ${error.message}`, req.ip);
     res.status(500).json({ message: "Error running project" });
   }
 };
@@ -417,9 +425,7 @@ export const updateFileName = async (
 
     if (!oldFilename || !newFilename) {
       logger.warn("Old or new filename missing", req.ip);
-      res
-        .status(400)
-        .json({ message: "Old and new filenames are required" });
+      res.status(400).json({ message: "Old and new filenames are required" });
       return;
     }
 
@@ -434,17 +440,9 @@ export const updateFileName = async (
       res.status(404).json({ message: "Project not found" });
       return;
     }
-    
-    const oldPath = path.join(
-      __dirname,
-      "../../storage",
-      oldFilename
-    );
-    const newPath = path.join(
-      __dirname,
-      "../../storage",
-      newFilename
-    );
+
+    const oldPath = path.join(__dirname, "../../storage", oldFilename);
+    const newPath = path.join(__dirname, "../../storage", newFilename);
 
     await fs.rename(oldPath, newPath);
 
@@ -471,9 +469,7 @@ export const updateFileContent = async (
 
     if (!filename || content === undefined) {
       logger.warn("Filename or content missing", req.ip);
-      res
-        .status(400)
-        .json({ message: "Filename and content are required" });
+      res.status(400).json({ message: "Filename and content are required" });
       return;
     }
 
@@ -489,11 +485,7 @@ export const updateFileContent = async (
       return;
     }
 
-    const filePath = path.join(
-      __dirname,
-      "../../storage",
-      filename
-    );
+    const filePath = path.join(__dirname, "../../storage", filename);
 
     await fs.writeFile(filePath, content, "utf-8");
 
@@ -520,9 +512,7 @@ export const updateFolderName = async (
 
     if (!oldFilename || !newFilename) {
       logger.warn("Old or new filename missing", req.ip);
-      res
-        .status(400)
-        .json({ message: "Old and new filenames are required" });
+      res.status(400).json({ message: "Old and new filenames are required" });
       return;
     }
 
@@ -538,16 +528,8 @@ export const updateFolderName = async (
       return;
     }
 
-    const oldPath = path.join(
-      __dirname,
-      "../../storage",
-      oldFilename
-    );
-    const newPath = path.join(
-      __dirname,
-      "../../storage",
-      newFilename
-    );
+    const oldPath = path.join(__dirname, "../../storage", oldFilename);
+    const newPath = path.join(__dirname, "../../storage", newFilename);
 
     await fs.rename(oldPath, newPath);
 
@@ -590,11 +572,7 @@ export const deleteFile = async (
       return;
     }
 
-    const filePath = path.join(
-      __dirname,
-      "../../storage",
-      filename
-    );
+    const filePath = path.join(__dirname, "../../storage", filename);
 
     await fs.unlink(filePath);
 
