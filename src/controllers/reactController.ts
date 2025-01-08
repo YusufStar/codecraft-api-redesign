@@ -5,6 +5,7 @@ import path from "path";
 import { Request, Response } from "express";
 import fs from "fs/promises";
 import { spawn } from "child_process";
+import * as fsSync from "fs";
 
 const execPromise = (command: string): Promise<string> => {
   return new Promise((resolve, reject) => {
@@ -19,8 +20,8 @@ const execPromise = (command: string): Promise<string> => {
 
 const prisma = new PrismaClient();
 
-const generateUniquePort = () => {
-  let port;
+const generateUniquePort = (): number => {
+  let port: number;
   while (true) {
     const min = 3000;
     const max = 9999;
@@ -32,11 +33,13 @@ const generateUniquePort = () => {
   return port;
 };
 
-const runningProjects: { [projectId: string]: { process: any } } = {};
+interface RunningProjects {
+  [projectId: string]: { process: any };
+}
+
+const runningProjects: RunningProjects = {};
 
 export const creteApp = async (req: Request, res: Response): Promise<void> => {
-  // Create a react app with execPromise and create a model
-  // in the database with prisma
   try {
     const { name } = req.body;
     const userId = (req as any).user?.id;
@@ -69,7 +72,7 @@ export const creteApp = async (req: Request, res: Response): Promise<void> => {
     const appPath = path.join(__dirname, "../../storage", userId, name);
     const port = generateUniquePort();
 
-    await execPromise(`npx create-react-app ${appPath}`);
+    await execPromise(`npx create-react-app ${appPath} --template typescript`);
 
     const newApp = await prisma.reactProjects.create({
       data: {
@@ -178,11 +181,11 @@ export const addDependency = async (
       return;
     }
 
-    execPromise(`cd ${project.realPath} && yarn add ${dependency}`);
+    await execPromise(`cd ${project.realPath} && yarn add ${dependency}`);
 
     res.status(200).send({ message: "Dependency added successfully" });
-  } catch (error) {
-    console.error("Failed to add dependency:", error);
+  } catch (error: any) {
+    logger.error(`Failed to add dependency: ${error.message}`, req.ip);
     res.status(500).send({ message: "Failed to add dependency" });
   }
 };
@@ -583,6 +586,76 @@ export const deleteFile = async (
   }
 };
 
+export const scanTypes = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { projectId } = req.params;
+
+    if (!projectId) {
+      logger.warn("Project ID missing", req.ip);
+      res.status(400).json({ message: "Project ID is required" });
+      return;
+    }
+
+    const project = await prisma.reactProjects.findUnique({
+      where: {
+        id: projectId,
+      },
+    });
+
+    if (!project) {
+      logger.warn("Project not found", req.ip);
+      res.status(404).json({ message: "Project not found" });
+      return;
+    }
+
+    const appPath = project.realPath;
+
+    const getAllTypeFiles = (
+      dirPath: string,
+      arrayOfFiles: string[] = []
+    ): string[] => {
+      const files = fsSync.readdirSync(dirPath);
+
+      files.forEach((file: string) => {
+        const filePath = path.join(dirPath, file);
+
+        if (fsSync.statSync(filePath).isDirectory()) {
+          arrayOfFiles = getAllTypeFiles(filePath, arrayOfFiles);
+        } else if (filePath.endsWith(".d.ts")) {
+          arrayOfFiles.push(filePath);
+        }
+      });
+      return arrayOfFiles;
+    };
+
+    const loadAllTypes = (): { [key: string]: string } => {
+      const typeFiles = getAllTypeFiles(appPath);
+      const types: { [key: string]: string } = {};
+
+      typeFiles.forEach((file) => {
+        const relativePath = path.relative(appPath, file);
+        types[relativePath] = fsSync.readFileSync(file, "utf-8");
+      });
+
+      return types;
+    };
+
+    try {
+      const types = loadAllTypes();
+      res.status(200).json({ types, message: "Types scanned successfully" });
+    } catch (error: any) {
+      logger.error(`Error scanning types: ${error.message}`, req.ip);
+      res.status(500).json({ message: "Error scanning types" });
+    }
+  } catch (error: any) {
+    logger.error(`Error scanning types: ${error.message}`, req.ip);
+    res.status(500).json({ message: "Error scanning types" });
+  }
+};
+
 export default {
   getProjects: getAllProjects,
   createProject: creteApp,
@@ -594,4 +667,5 @@ export default {
   updateFileContent: updateFileContent,
   updateFolderName: updateFolderName,
   deleteFile: deleteFile,
+  scanTypes: scanTypes,
 };

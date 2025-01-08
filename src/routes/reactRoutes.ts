@@ -11,6 +11,7 @@ import {
   updateFileContent,
   updateFolderName,
   deleteFile,
+  scanTypes,
 } from "../controllers/reactController";
 import { authRequire } from "../middleware";
 
@@ -18,6 +19,7 @@ const router = express.Router();
 
 router.post("/", authRequire, creteApp);
 router.get("/", authRequire, getAllProjects);
+router.get("/types/:projectId", authRequire, scanTypes);
 router.get("/:projectId/dependencies", authRequire, getDependency);
 router.post("/:projectId/dependencies", authRequire, addDependency);
 router.delete("/:projectId/dependencies", authRequire, removeDependency);
