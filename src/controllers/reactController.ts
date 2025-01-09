@@ -265,8 +265,6 @@ export const runProject = async (
     const appPath = project.realPath;
     const port = project.port;
 
-    console.log(appPath);
-
     const childProcess = spawn(`yarn cross-env PORT=${port} yarn start`, {
       cwd: appPath,
       shell: true,

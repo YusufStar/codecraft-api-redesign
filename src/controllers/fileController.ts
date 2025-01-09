@@ -122,9 +122,6 @@ export const deleteFile = async (
     const { id } = req.params;
     const userId = req.user?.id;
 
-    console.log("Deleting file with ID:", id);
-    console.log("User ID:", userId);
-
     if (!userId) {
       logger.warn("User ID not found in request", req.ip);
       res.status(401).json({ message: "Unauthorized" });
@@ -134,8 +131,6 @@ export const deleteFile = async (
     const result = await prisma.file.delete({
       where: { id },
     });
-
-    console.log("File deletion result:", result);
 
     logger.info("File deleted successfully", req.ip);
     res.status(200).json({ message: "File deleted successfully" });
