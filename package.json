@@ -29,6 +29,7 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.9",
+    "openai": "^4.78.0",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
   },
